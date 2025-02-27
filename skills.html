@@ -1,0 +1,90 @@
+<section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">My Skills</h2>
+  
+      <div class="row">
+        <div class="col-md-6">
+          <h5><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-logo"> Java</h5>
+          <div class="progress"><div class="progress-bar java-bar" role="progressbar">0%</div></div>
+  
+          <h5><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-logo"> Python</h5>
+          <div class="progress"><div class="progress-bar python-bar" role="progressbar">0%</div></div>
+        </div>
+  
+        <div class="col-md-6">
+          <h5><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-logo"> MySQL</h5>
+          <div class="progress"><div class="progress-bar mysql-bar" role="progressbar">0%</div></div>
+  
+          <h5><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-logo"> HTML</h5>
+          <div class="progress"><div class="progress-bar html-bar" role="progressbar">0%</div></div>
+  
+          <h5><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-logo"> CSS</h5>
+          <div class="progress"><div class="progress-bar css-bar" role="progressbar">0%</div></div>
+  
+          <h5><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-logo"> JavaScript</h5>
+          <div class="progress"><div class="progress-bar js-bar" role="progressbar">0%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .progress {
+      height: 25px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+  
+    .progress-bar {
+      line-height: 25px;
+      text-align: center;
+      font-weight: bold;
+      color: #fff;
+      transition: width 2s ease;
+    }
+  
+    .java-bar { background: linear-gradient(45deg, #ff7eb3, #ff758c); }
+    .python-bar { background: linear-gradient(45deg, #ff9a44, #fc6076); }
+    .mysql-bar { background: linear-gradient(45deg, #00758f, #00c6ff); }
+    .html-bar { background: linear-gradient(45deg, #ff512f, #dd2476); }
+    .css-bar { background: linear-gradient(45deg, #6a11cb, #2575fc); }
+    .js-bar { background: linear-gradient(45deg, #ffcc00, #ff6a00); }
+  
+    .skill-logo {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  </style>
+  
+  <script>
+    function animateProgress() {
+      const skills = [
+        { selector: '.java-bar', value: 80 },
+        { selector: '.python-bar', value: 75 },
+        { selector: '.mysql-bar', value: 70 },
+        { selector: '.html-bar', value: 90 },
+        { selector: '.css-bar', value: 85 },
+        { selector: '.js-bar', value: 70 }
+      ];
+  
+      skills.forEach(skill => {
+        const bar = document.querySelector(skill.selector);
+        bar.style.width = skill.value + '%';
+        bar.innerText = skill.value + '%';
+  
+        setTimeout(() => {
+          bar.style.width = '0%';
+          bar.innerText = '0%';
+        }, 15000);
+      });
+    }
+  
+    animateProgress();
+    setInterval(animateProgress, 30000);
+  </script>
+  
+  <!-- Let me know if you’d like to tweak anything! 🚀 -->
+  

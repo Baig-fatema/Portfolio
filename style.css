@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #08012c;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #271b59;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0px 23px;
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: rgb(172, 172, 205);
+    font-size: 1.02rem;
+  }
+
+  .left {
+    font-size: 1.5rem;
+
+  }
+
+  .social-bar {
+    position: fixed;
+    color: white;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+.social-bar a {
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+    padding: 20px;
+    background: #9696a4;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+}
+.social-bar a:hover {
+    background: #4c4cff;
+    transform: scale(1.1);
+}
+  .firstSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 140px 0px;
+  }
+
+  .thirdInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 140px 0px;
+  }
+
+  .firstSection>div {
+    width: 30%;
+  }
+
+  .thirdInner>div {
+    width: 80%;
+  }
+
+  .leftSection {
+    font-size: 2rem;
+    margin: 30px 0;
+  }
+
+  .rightSection img {
+    width: 80%;
+  }
+
+  .purple {
+    color: rgb(185, 207, 221)violet;
+  }
+
+  .textGrey {
+    color: rgb(194, 188, 188);
+    font-size: 2rem;
+  }
+
+  #element {
+    color: rgb(139, 139, 218);
+  }
+
+  main hr {
+    border: 0;
+    height: 1.2px;
+    background: #9c97f1;
+    margin: 48px 84px;
+  }
+
+  .secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+  }
+
+  .thirdSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+  }
+
+  .fourthSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+  }
+
+  .fifthSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+  }
+  .sixthSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+  }
+
+  .secondSection h1 {
+    font-size: 1.9rem;
+  }
+
+  .secondSection .box {
+    display: flex;
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+  }
+
+  .secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+  }
+
+  .word {
+    display: inline-block;
+    margin-right: 10px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+  }
+
+  /* Animation for sliding words */
+  @keyframes slideIn {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Delays to show words one by one */
+  .word:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+
+  .word:nth-child(2) {
+    animation-delay: 1s;
+  }
+
+  .word:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+
+  .word:nth-child(4) {
+    animation-delay: 2s;
+  }
+
+  .word:nth-child(5) {
+    animation-delay: 2.5s;
+  }
+
+  .headingStyle {
+    font-size: 2rem;
+    /* Makes the text large and readable */
+    font-weight: bold;
+    /* Makes the text bold */
+    color: white;
+    /* A vibrant coral color (you can change this) */
+    text-transform: uppercase;
+    /* Transforms the text to uppercase */
+    letter-spacing: 2px;
+    /* Adds space between letters */
+    padding: 10px 20px;
+    /* Adds padding around the text */
+    border: 2px solid #3e1bb2;
+    /* Adds a border matching the text color */
+    border-radius: 8px;
+    /* Rounds the corners */
+    background: #586086;
+    /* Light background to make the text pop */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    display: inline-block;
+    /* Keeps the element inline but with padding */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+  }
+
+  /* Add a hover effect */
+  .headingStyle:hover {
+    color: #221969;
+    background: #7b6f6f;
+    cursor: pointer;
+    transform: translateY(-2px);
+    /* Slight lift on hover */
+  }
+
+  .progress {
+    height: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .progress-bar {
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    transition: width 1s ease;
+  }
+
+  .java-bar {
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+  }
+
+  .python-bar {
+    background: linear-gradient(45deg, #ff9a44, #fc6076);
+  }
+
+  .github-bar {
+    background: linear-gradient(45deg, #c66f23, #8b1928);
+  }
+
+  .dsa-bar {
+    background: linear-gradient(45deg, #b4ff44, #0a9a56);
+  }
+
+  .mysql-bar {
+    background: linear-gradient(45deg, #00758f, #00c6ff);
+  }
+
+  .html-bar {
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+  }
+
+  .css-bar {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+  }
+
+  .js-bar {
+    background: linear-gradient(45deg, #ffcc00, #ff6a00);
+  }
+
+  .skill-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .card-title {
+    color: rgb(234, 172, 56);
+  }
+
+  .card-text {
+    color: white;
+  }
+
+  .project-card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .project-card img {
+    max-height: 80px;
+    object-fit: contain;
+  }
+
+  .contact-card {
+            background: #111133;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        .btn-submit {
+            background-color: #ff9800;
+            color: #fff;
+        }
+        .btn-submit:hover {
+            background-color: #ff5722;
+        }
+
+        .top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00bfff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .top-btn:hover {
+            background-color: #0080ff;
+        }

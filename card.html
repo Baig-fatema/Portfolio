@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #08012c;
+            color: #fff;
+            padding: 20px;
+        }
+        .card-title{
+            color: rgb(234, 172, 56);
+        }
+        .card-text{
+            color: white;
+        }
+        .project-card {
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        .project-card img {
+            max-height: 80px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="text-center mb-5">My Projects</h2>
+    <div class="row g-4">
+
+        <div class="col-md-6 col-lg-6">
+            <div class="card project-card bg-dark border-primary">
+                <div class="card-body text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" alt="Quiz App Logo">
+                    <h4 class="card-title mt-3">ApptiMock Quiz Application</h4>
+                    <p class="card-text">Developed a quiz app with Django, HTML, CSS, and JavaScript. Implemented authentication, a superuser dashboard, and interactive features.</p>
+                    <a href="#" class="btn btn-primary">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <div class="card project-card bg-dark border-success">
+                <div class="card-body text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Biz Manager Logo">
+                    <h4 class="card-title mt-3">Django-Costume-Biz-Manager</h4>
+                    <p class="card-text">Built a costume business management system with Django. Features vendor, customer, product, and inventory management.</p>
+                    <a href="#" class="btn btn-success">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <div class="card project-card bg-dark border-danger">
+                <div class="card-body text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="ATS Logo">
+                    <h4 class="card-title mt-3">ATS Score Recognizer</h4>
+                    <p class="card-text">Created a tool for extracting scores from resumes using OCR and machine learning. Supports multiple document formats.</p>
+                    <a href="#" class="btn btn-danger">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <div class="card project-card bg-dark border-warning">
+                <div class="card-body text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="RPS Logo">
+                    <h4 class="card-title mt-3">Rock, Paper, Scissors (Tkinter GUI)</h4>
+                    <p class="card-text">Developed a GUI-based Rock, Paper, Scissors game with Python and Tkinter. Play against the computer with a simple and intuitive interface.</p>
+                    <a href="#" class="btn btn-warning">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

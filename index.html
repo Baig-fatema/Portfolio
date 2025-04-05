@@ -22,9 +22,10 @@
     crossorigin="anonymous"></script>
    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-  <header>
+<body style="  background-color: #08012c;
+color: white;
+font-family: 'Poppins', sans-serif;">
+  <!-- <header>
     <nav>
       <div class="left">
         Fatema's Portfolio
@@ -40,7 +41,48 @@
         </ul>
       </div>
     </nav>
-  </header>
+  </header> -->
+  <!-- Add this inside <head> for Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Responsive Navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg custom-navbar px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="#">Fatema's Portfolio</a>
+      <!-- Menu Button (Hamburger icon) -->
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#homesection">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#aboutsection">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#expsection">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#skillsSection">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#projectSection">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contactSection">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
   <main>
     <div class="social-bar">
       <a href="https://www.linkedin.com/in/baig-fatema-begum-40b9a4304/" target="_blank"><i class="fa-brands fa-linkedin" style="color: white; font-size: 1.5rem;"></i></a>
@@ -289,7 +331,7 @@
                         <textarea class="form-control" id="message" rows="5" placeholder="Type your message here" required></textarea>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-submit">Send Message</button>
+                        <button type="submit" class="btn btn-submit" style="background-color: gray; color: gold;">Send Message</button>
                     </div>
                 </form>
             </div>

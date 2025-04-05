@@ -9,6 +9,16 @@
     font-family: 'Poppins', sans-serif;
   }
 
+
+  .custom-navbar {
+    background-color: #271b59 /* Custom dark blue background */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #f1c40f !important; /* Yellow on hover */
+  }
+
+
   nav {
     height: 80px;
     display: flex;
